@@ -1,0 +1,554 @@
+@font-face {
+  font-family: "Elephant";
+  src: url("fonts/ELEPHNT.TTF") format("truetype");
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+}
+
+span {
+  color: var(--color-links);
+}
+
+:root {
+  --primary-dark-green: #224f34;
+  --secondary-green: #267d49;
+  --light-green-1: #93b9a2;
+  --light-green-2: #a9d4ba;
+  --light-green-3: #cadcd0;
+  --grey-text: #6f6f6f;
+  --pale-green-1: #c2efd4;
+  --pale-green-2: #a3f3be;
+  --color-links: #454545;
+}
+
+.footer-main-color {
+  color: var(--pale-green-1);
+}
+.active-article {
+  background-color: var(--pale-green-1);
+}
+
+.grey-text {
+  color: var(--grey-text);
+}
+
+.color-links {
+  color: var(--color-links);
+}
+
+.primary-color {
+  color: var(--primary-dark-green);
+}
+
+.secondary-color {
+  color: var(--secondary-green);
+}
+
+.bg-btn {
+  background-color: var(--primary-dark-green) !important;
+}
+
+.fs-h1 {
+  font-size: 3rem !important;
+}
+
+.border-btn {
+  border: 2px solid var(--primary-dark-green);
+}
+
+.active-link {
+  border-bottom: 2px solid var(--primary-dark-green);
+  color: var(--primary-dark-green);
+}
+
+.p-color-img {
+  color: #373737;
+}
+
+.f-logo {
+  font-family: "Elephant", sans-serif;
+}
+
+.bg-primary-color {
+  background-color: #224f34;
+}
+
+.hero {
+  background-color: #c2efd4;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.radius-3 {
+  border-radius: 3px;
+}
+
+.rufina-regular {
+  font-family: "Rufina", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.rufina-bold {
+  font-family: "Rufina", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-slab {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-slab-bold {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.border-bottom-solid {
+  border-bottom: 2px solid #000;
+}
+
+.image-wrapper {
+  height: 500px; /* Adjust as needed */
+  overflow: hidden; /* Hide overflow */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Maintain aspect ratio and cover the wrapper */
+}
+
+.form-control::placeholder {
+  color: #fff; /* White color for placeholder text */
+  opacity: 1; /* Ensure opacity is 1 for better visibility */
+}
+
+.form-control:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: #a3f3be; /* Ensure the border color remains consistent */
+}
+
+.input-group-append .btn {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.form-control {
+  color: #fff; /* White color for input text */
+}
+
+.solid-hr {
+  border: 0; /* Remove default border */
+  height: 2px; /* Thickness of the line */
+  background-color: #a3f3be; /* Color of the line */
+  margin: 20px 0; /* Optional: spacing around the hr */
+}
+
+.box {
+  height: 62.8px;
+  width: 55.2px;
+}
+
+.article {
+  width: 32%;
+}
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 0.7rem !important;
+  }
+  .hero nav a {
+    font-size: 0.7rem !important;
+  }
+  .hero nav button:last-child {
+    margin: 0 0.6rem !important;
+  }
+  .hero nav img {
+    width: 30px;
+    height: 30px;
+  }
+  .hero .row {
+    margin: 0.5rem 1rem !important;
+    padding: 0.7rem 0 !important;
+  }
+  .hero .row p {
+    margin-bottom: 0.3rem !important;
+  }
+  .hero p {
+    font-size: 0.4rem !important;
+  }
+  .hero button {
+    font-size: 0.3rem !important;
+    padding-top: 0.2rem !important;
+    padding-bottom: 0.2rem !important;
+    padding-left: 0.2rem !important;
+    padding-right: 0.2rem !important;
+    max-width: 100%;
+  }
+  /* //////////////////////////////////// */
+  .best-selling {
+    padding: 0.7rem 0 !important;
+  }
+  .best-selling h2 {
+    font-size: 0.6rem !important;
+    margin-bottom: 1rem !important;
+  }
+  .best-selling p {
+    font-size: 0.5rem !important;
+    margin-bottom: 1rem !important;
+  }
+  .best-selling span {
+    font-size: 0.4rem !important;
+    padding-right: 0.2rem !important;
+    padding-left: 0.2rem !important;
+  }
+  .best-selling p img {
+    width: 10px;
+    height: 10px;
+  }
+  .best-selling button {
+    font-size: 0.5rem !important;
+    padding-top: 0.2rem !important;
+    padding-bottom: 0.2rem !important;
+    padding-left: 0.2rem !important;
+    padding-right: 0.2rem !important;
+    max-width: 100%;
+  }
+  .best-selling .d-flex {
+    margin: 1rem 0 !important;
+  }
+  .best-selling button img {
+    width: 12px;
+    height: 12px;
+  }
+  /* ///////////////////////////// */
+  .our-products {
+    padding: 0.7rem 0 !important;
+  }
+  .our-products nav {
+    flex-direction: column;
+    gap: 10px !important;
+    margin-bottom: 1rem !important;
+  }
+  .our-products a {
+    font-size: 0.4rem !important;
+    padding: 0.2rem !important;
+  }
+  .our-products .row:first-of-type {
+    margin-bottom: 0.5rem !important;
+  }
+  .our-products h2 {
+    font-size: 0.6rem !important;
+    margin-bottom: 1rem !important;
+  }
+  .our-products p {
+    font-size: 0.5rem !important;
+  }
+  .our-products span {
+    font-size: 0.4rem !important;
+    padding-right: 0.2rem !important;
+    padding-left: 0.2rem !important;
+  }
+  .our-products p img {
+    width: 10px;
+    height: 10px;
+  }
+  .our-products button {
+    font-size: 0.5rem !important;
+    padding-right: 0.2rem !important;
+    padding-left: 0.2rem !important;
+  }
+  /* //////////////////////////////////////// */
+  .exclusive-offer {
+    padding: 0.5rem 0 !important;
+  }
+  .exclusive-offer h3 {
+    font-size: 0.5rem;
+    padding-top: 1rem !important;
+  }
+  .exclusive-offer button {
+    font-size: 0.3rem !important;
+    padding-top: 0.2rem !important;
+    padding-bottom: 0.2rem !important;
+    padding-left: 0.2rem !important;
+    padding-right: 0.2rem !important;
+    max-width: 100%;
+  }
+
+  .big-box {
+    flex-direction: column;
+  }
+  .box {
+    width: 30px !important;
+    height: 30px !important;
+  }
+  /* ///////////////////////////////// */
+  .designer-clothes {
+    margin-top: 0 !important;
+    padding-top: 1rem !important;
+  }
+  .designer-clothes h2 {
+    font-size: 0.6rem !important;
+    margin-bottom: 1rem !important;
+  }
+  .designer-clothes p {
+    font-size: 0.4rem !important;
+    margin-bottom: 1rem !important;
+    font-size: 0.5rem !important;
+  }
+  /* /////////////////////////////////// */
+  .feedback-corner {
+    margin: 0 !important;
+    padding: 1rem 0 !important;
+  }
+  .feedback-corner h2 {
+    font-size: 0.6rem !important;
+    margin-bottom: 1rem !important;
+    padding-bottom: 1rem !important;
+  }
+  .feedback-corner h4 {
+    font-size: 0.5rem !important;
+    margin-bottom: 1rem !important;
+  }
+  .feedback-corner img {
+    width: 10px !important;
+    height: 10px !important;
+  }
+  .feedback-corner p {
+    font-size: 0.3rem !important;
+    margin-bottom: 1rem !important;
+  }
+  .feedback-corner div:last-child {
+    margin-top: 0.5rem !important;
+  }
+  /* ///////////////////////////////////////// */
+  footer .row {
+    flex-direction: column;
+  }
+  footer a,
+  footer p {
+    font-size: 0.4rem !important;
+  }
+  footer img {
+    width: 15px;
+    height: 15px;
+    padding-bottom: 0.3rem;
+  }
+  footer .col-4 {
+    width: 100%;
+  }
+  footer input,
+  button {
+    font-size: 0.6rem !important;
+  }
+  footer .row {
+    margin: 0 !important;
+  }
+  footer .col-9,
+  footer .col-3 {
+    margin: 0 !important;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .hero h1 {
+    font-size: 1rem !important;
+  }
+  .hero nav a {
+    font-size: 1rem !important;
+  }
+  .hero nav button:last-child {
+    margin: 0 1rem !important;
+  }
+  .hero nav img {
+    width: 40px;
+    height: 40px;
+  }
+  .hero .row {
+    margin: 1rem 2rem !important;
+    padding: 1rem 0 !important;
+  }
+  .hero .row p {
+    margin-bottom: 0.5rem !important;
+  }
+  .hero p {
+    font-size: 0.6rem !important;
+  }
+  .hero button {
+    font-size: 0.5rem !important;
+    padding: 0.4rem !important;
+    max-width: 100%;
+  }
+  /* //////////////////////////////////// */
+  .best-selling {
+    padding: 1rem 0 !important;
+  }
+  .best-selling h2 {
+    font-size: 0.8rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+  .best-selling p {
+    font-size: 0.7rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+  .best-selling span {
+    font-size: 0.6rem !important;
+    padding: 0.4rem !important;
+  }
+  .best-selling p img {
+    width: 15px;
+    height: 15px;
+  }
+  .best-selling button {
+    font-size: 0.7rem !important;
+    padding: 0.4rem !important;
+    max-width: 100%;
+  }
+  .best-selling .d-flex {
+    margin: 1.5rem 0 !important;
+  }
+  .best-selling button img {
+    width: 18px;
+    height: 18px;
+  }
+  /* ///////////////////////////// */
+  .our-products {
+    padding: 1rem 0 !important;
+  }
+  .our-products nav {
+    gap: 15px !important;
+    margin-bottom: 1.5rem !important;
+  }
+  .our-products a {
+    font-size: 0.6rem !important;
+    padding: 0.3rem !important;
+  }
+  .our-products .row:first-of-type {
+    margin-bottom: 0.7rem !important;
+  }
+  .our-products h2 {
+    font-size: 0.8rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+  .our-products p {
+    font-size: 0.7rem !important;
+  }
+  .our-products span {
+    font-size: 0.6rem !important;
+    padding: 0.4rem !important;
+  }
+  .our-products p img {
+    width: 15px;
+    height: 15px;
+  }
+  .our-products button {
+    font-size: 0.7rem !important;
+    padding: 0.4rem !important;
+  }
+  /* //////////////////////////////////////// */
+  .exclusive-offer {
+    padding: 0.8rem 0 !important;
+  }
+  .exclusive-offer h3 {
+    font-size: 0.7rem;
+    padding-top: 1.2rem !important;
+  }
+  .exclusive-offer button {
+    font-size: 0.5rem !important;
+    padding: 0.4rem !important;
+    max-width: 100%;
+  }
+  .box {
+    width: 40px !important;
+    height: 40px !important;
+  }
+  /* ///////////////////////////////// */
+  .designer-clothes {
+    margin-top: 0 !important;
+    padding-top: 1.2rem !important;
+  }
+  .designer-clothes h2 {
+    font-size: 0.8rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+  .designer-clothes p {
+    font-size: 0.6rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+  /* /////////////////////////////////// */
+  .feedback-corner {
+    margin: 0 !important;
+    padding: 1.2rem 0 !important;
+  }
+  .feedback-corner h2 {
+    font-size: 0.8rem !important;
+    margin-bottom: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+  }
+  .feedback-corner h4 {
+    font-size: 0.7rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+  .feedback-corner img {
+    width: 15px !important;
+    height: 15px !important;
+  }
+  .feedback-corner p {
+    font-size: 0.5rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+  .feedback-corner div:last-child {
+    margin-top: 0.7rem !important;
+  }
+  /* ///////////////////////////////////////// */
+  footer .row {
+    flex-direction: column;
+  }
+  footer a,
+  footer p {
+    font-size: 0.6rem !important;
+  }
+  footer img {
+    width: 20px;
+    height: 20px;
+    padding-bottom: 0.4rem;
+  }
+  footer .col-4 {
+    width: 100%;
+  }
+  footer input,
+  button {
+    font-size: 0.8rem !important;
+  }
+  footer .row {
+    margin: 0 !important;
+  }
+  footer .col-9,
+  footer .col-3 {
+    margin: 0 !important;
+  }
+}

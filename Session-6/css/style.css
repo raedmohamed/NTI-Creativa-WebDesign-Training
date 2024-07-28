@@ -1,0 +1,269 @@
+:root {
+  --main-color: #d4a750;
+  --sec-color: #ffffff;
+  --third-color: #000000;
+  --fontw-1: 700;
+  --fonts-1: 4rem;
+  --fonts-2: 3rem;
+  --fonts-headings: 2.5rem;
+  --fonts-3: 1.25rem;
+  --fonts-4: 0.9rem;
+  --lineh-1: 1.2;
+  --lineh-2: 1.5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Tajawal", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+nav a {
+  color: var(--sec-color);
+  text-decoration: none;
+  font-size: var(--fonts-4);
+  font-weight: var(--fontw-1);
+  text-transform: capitalize;
+}
+
+.active {
+  color: var(--main-color);
+}
+
+li:last-child a {
+  color: var(--main-color);
+}
+
+.main-nav {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  background-color: var(--third-color);
+  padding: 1rem 0;
+}
+
+.main-nav i {
+  padding-left: 4px;
+  vertical-align: 1.1px;
+}
+
+.main-nav li {
+  list-style: none;
+  cursor: pointer;
+}
+
+.main-nav ul {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 4.5rem;
+}
+
+.hero {
+  width: 100%;
+  overflow: hidden;
+  background: url("../images/2.jpg") center center;
+  background-size: 100% 100%;
+  position: relative;
+  min-height: 95vh;
+  animation-name: zoomIn;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.box-text {
+  width: 60%;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centers the element */
+  margin: auto;
+  color: var(--sec-color);
+  line-height: var(--lineh-1);
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  text-align: center;
+  z-index: 2;
+}
+
+.box-text h2 {
+  font-size: var(--fonts-1);
+  padding-bottom: 0.8rem;
+}
+
+.box-text p {
+  font-size: var(--fonts-2);
+  font-weight: var(--fontw-1);
+}
+
+@keyframes zoomIn {
+  0% {
+    background-size: 100% 100%;
+  }
+  100% {
+    background-size: 150% 150%;
+  }
+}
+
+.iframe .container {
+  padding: 7% 0;
+}
+
+.iframe iframe {
+  width: 50%;
+  height: 400px;
+  overflow: hidden;
+  border: none;
+}
+
+.iframe p {
+  color: #333741;
+  font-size: var(--fonts-3);
+  line-height: var(--lineh-2);
+  font-weight: 400;
+  width: 50%;
+  padding: 4% 2%;
+  opacity: 1;
+}
+
+.services {
+  background-color: #f8f9fa;
+  padding: 2rem 0;
+}
+
+.heading {
+  font-weight: var(--fontw-1);
+  text-align: center;
+  color: var(--main-color);
+  font-size: var(--fonts-headings);
+  margin-bottom: 1rem;
+}
+
+.line {
+  width: 100px;
+  margin: 1rem auto;
+  border: 1px solid #000000;
+}
+
+.card {
+  width: 32%;
+  margin-top: 1.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.services-text {
+  padding: 1.5rem;
+  padding-top: 0.8rem;
+  line-height: var(--lineh-2);
+}
+
+.services-text h3 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.75rem;
+  color: var(--main-color);
+  padding-bottom: 1rem;
+}
+
+.services-text p {
+  text-align: justify;
+  font-size: 1.25rem;
+}
+
+.services .container:last-child {
+  justify-content: center;
+  gap: 30px;
+}
+
+.icon {
+  color: #000000;
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  right: 0;
+  top: 25%;
+  background-color: var(--main-color);
+  font-size: 26px;
+  padding: 4px 10px;
+  z-index: 999;
+}
+
+.icon a {
+  color: #000000;
+}
+
+.grouper .icon:last-child {
+  top: 32%;
+}
+
+/* Base font size */
+html {
+  font-size: 16px; /* Default size for large screens */
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 14px; /* Slightly smaller font size for medium screens */
+  }
+}
+
+@media (max-width: 900px) {
+  html {
+    font-size: 12px; /* Smaller font size for small screens */
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 10px; /* Even smaller font size for very small screens */
+  }
+}
+
+.menu {
+  width: 40px;
+  height: 10px;
+  cursor: pointer;
+}
+
+.tab {
+  background-color: #fff;
+  z-index: 999;
+  height: 28%;
+  margin-bottom: 10%;
+}
+
+.menu .tab:last-child {
+  margin-bottom: 0;
+}
