@@ -186,6 +186,8 @@ span {
   }
   .hero nav button:last-child {
     margin: 0 0.6rem !important;
+    font-size: 0.6rem !important;
+    padding: 0.2rem 0.4rem !important;
   }
   .hero nav img {
     width: 30px;
@@ -249,8 +251,10 @@ span {
   .our-products {
     padding: 0.7rem 0 !important;
   }
+  .our-products .row .col-3 {
+    width: 50% !important;
+  }
   .our-products nav {
-    flex-direction: column;
     gap: 10px !important;
     margin-bottom: 1rem !important;
   }
@@ -299,9 +303,6 @@ span {
     max-width: 100%;
   }
 
-  .big-box {
-    flex-direction: column;
-  }
   .box {
     width: 30px !important;
     height: 30px !important;
@@ -372,6 +373,22 @@ span {
   footer .col-3 {
     margin: 0 !important;
   }
+  .addit-res {
+    display: none !important;
+  }
+  .footer .container .row:last-child {
+    display: none !important;
+  }
+  footer .col-3 p:nth-child(2) {
+    padding-top: 0.4rem !important;
+    padding-left: 0.2rem !important;
+  }
+  footer .col-3 p:last-child {
+    display: flex;
+  }
+}
+
+@media (min-width: 1024px) {
 }
 
 @media (min-width: 601px) and (max-width: 1024px) {
@@ -383,6 +400,8 @@ span {
   }
   .hero nav button:last-child {
     margin: 0 1rem !important;
+    font-size: 0.6rem !important;
+    padding: 0.2rem 0.4rem !important;
   }
   .hero nav img {
     width: 40px;
@@ -442,6 +461,9 @@ span {
   .our-products nav {
     gap: 15px !important;
     margin-bottom: 1.5rem !important;
+  }
+  .our-products .row .col-3 {
+    width: 50% !important;
   }
   .our-products a {
     font-size: 0.6rem !important;
@@ -525,9 +547,9 @@ span {
     margin-top: 0.7rem !important;
   }
   /* ///////////////////////////////////////// */
-  footer .row {
+  /* footer .row {
     flex-direction: column;
-  }
+  } */
   footer a,
   footer p {
     font-size: 0.6rem !important;
