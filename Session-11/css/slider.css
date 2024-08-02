@@ -1,0 +1,75 @@
+
+.carousel-item {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1;
+}
+
+.carousel-item img {
+  /* position: relative; */
+  z-index: 0;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center; 
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+  width: 70%; /* Ensure caption takes full width */
+}
+
+.carousel-caption h2 {
+  text-align: center;
+  font-size: 3rem !important;
+  font-weight: 600;
+  text-transform: capitalize;
+  white-space: nowrap; /* Prevent line break */
+}
+
+.carousel-caption p {
+  font-size: 1.5rem !important;
+  line-height: 1.2;
+  text-align: center;
+  width: 50%;
+  margin: 2rem auto;
+}
+
+.btns {
+  z-index: 999;
+  display: flex; /* Align buttons horizontally */
+  gap: 15px; /* Space between buttons */
+  justify-content: center; /* Center buttons horizontally */
+  width: 40%;
+  margin: auto;
+}
+
+.btns button {
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 1.2rem;
+  background-color: #0c65ed;
+  color: #FFF;
+  padding: 14px; /* Ensure consistent padding */
+  border: none; 
+  
+  flex: 1;
+}
