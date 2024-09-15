@@ -1,3 +1,41 @@
 body {
   font-family: "Josefin Sans", sans-serif;
 }
+
+/* Styles for the Fixed Scroll to Top Button */
+.scroll-to-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  font-size: 20px;
+  z-index: 1000; /* Ensure it's above other elements */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+/* Show button when scrolled down */
+.scroll-to-top-btn.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hide button when at the bottom */
+.scroll-to-top-btn.hide {
+  opacity: 0;
+  transform: translateY(100px);
+}
+
+.scroll-to-top-btn:hover {
+  background-color: #0056b3;
+}

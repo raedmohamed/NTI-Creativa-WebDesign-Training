@@ -2,13 +2,966 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tradex</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100..700&family=Poppins:wght@100..900&family=Roboto+Slab:wght@100..900&family=Rufina:wght@400;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
 </head>
 
 <body>
+  <header>
+    <div class="head-top main-bck">
+      <div class="container d-flex justify-content-between align-items-start py-2 text-white">
+        <div class="box-text d-flex justify-content-start">
+          <p class="m-0">
+            <span class="border-end border-white d-flex gap-3 px-3">
+              <a href="#" class="text-white"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" class="text-white"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#" class="text-white"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#" class="text-white"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" class="text-white"><i class="fa-brands fa-google-plus-g"></i></a>
+            </span>
+          </p>
+          <p class="px-3 m-0">
+            <span>
+              <a href="#" class="text-white"><i class="fa-solid fa-location-dot pe-2"></i></a>
+            </span>
+            267 Park Avenue New York, NY 90210
+          </p>
+        </div>
+        <div class="box-text d-flex justify-content-start">
+          <p class="m-0">
+            <span class="border-end border-white d-flex gap-3 px-3">
+              <a href="#" class="text-white text-decoration-none"><i class="fa-regular fa-envelope pe-2"></i> Quick
+                Email</a>
+            </span>
+          </p>
+          <p class="px-3 m-0">
+            <span>
+              <a href="#" class="text-white"><i class="fa-solid fa-phone-volume pe-2"></i></a>
+            </span>
+            +1 (409) 987–5874
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--///////////////////////////////////////////////////////////////////////////////////////// end of the head top  #0c65ed -->
+    <div class="menu-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-2 pt-2">
+            <a href="index.html"><img src="images/Trade-X-Logo.png" alt=""></a>
+          </div>
+          <!-- //////////////////////////////////////////////////////////////////////// -->
+          <div class="col-10 px-4">
+            <nav class="navbar navbar-expand-lg navbar-light text-uppercase py-3 pb-0 ">
+              <div class="container-fluid px-0">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                  aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarScroll">
+                  <ul class="navbar-nav  my-2 my-lg-0 navbar-nav-scroll w-100 d-flex justify-content-between">
+                    <li class="nav-item nav-parent">
+                      <a class="nav-link active" aria-current="page" href="#">Home
+                        <i class="fa-solid fa-angle-down fa-xs"></i>
+                      </a>
+                      <ul class="transparent-menu">
+                        <li><a href="#">Home01</a></li>
+                        <li><a href="#">Home02</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item  nav-parent">
+                      <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item nav-parent">
+                      <a class="nav-link " href="#">headers <i class="fa-solid fa-angle-down fa-xs"></i></a>
+                      <ul class="transparent-menu">
+                        <li><a href="#">Header style 1</a></li>
+                        <li><a href="#">Header style 2</a></li>
+                        <li><a href="#">Header style 3</a></li>
+                        <li><a href="#">Header style 4</a></li>
+
+                      </ul>
+                    </li>
+                    <li class="nav-item nav-parent">
+                      <a class="nav-link " href="#">blog post <i class="fa-solid fa-angle-down fa-xs"></i></a>
+                      <ul class="transparent-menu">
+                        <li><a href="#">blog grid</a></li>
+                        <li><a href="#">blog masonary</a></li>
+                        <li><a href="#">clasic</a></li>
+                        <li><a href="#">blog detail</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item nav-parent">
+                      <a class="nav-link " href="#">services <i class="fa-solid fa-angle-down fa-xs"></i></a>
+                      <ul class="transparent-menu">
+                        <li><a href="#">full width</a></li>
+                        <li><a href="#">service 2 column</a></li>
+                        <li><a href="#">service 3 column</a></li>
+                        <li><a href="#">service 4 column</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item nav-parent">
+                      <a class="nav-link " href="#">features <i class="fa-solid fa-angle-down fa-xs"></i></a>
+                      <ul class="transparent-menu">
+                        <li><a href="#">shortcodes</a></li>
+                        <li><a href="#">feature 2 column</a></li>
+                        <li><a href="#">feature 3 column</a></li>
+                        <li><a href="#">feature 4 column</a></li>
+
+                      </ul>
+                    </li>
+                    <li class="nav-item nav-parent">
+                      <a class="nav-link " href="#">pages <i class="fa-solid fa-angle-down fa-xs"></i></a>
+                      <ul class="transparent-menu">
+                        <li><a href="#">######</a></li>
+                        <li><a href="#">######</a></li>
+                        <li><a href="#">######</a></li>
+                        <li><a href="#">######</a></li>
+                        <li><a href="#">######</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item nav-parent">
+                      <a class="nav-link" href="contact.html">contact</a>
+                    </li>
+                  </ul>
+
+                </div>
+              </div>
+            </nav>
+          </div>
+          <!-- /////////////////////////////////////////////////////////////// -->
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <!-- New Indicator Button -->
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="overlay"></div>
+          <img src="images/slider1.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block row">
+            <h2 class="h1 mb-4 fs-1">What You Do Today For Peoples1</h2>
+            <p class="w-50 f-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et iusto, explicabo
+              excepturi porro beatae</p>
+            <div class="row justify-content-center mt-4">
+              <button
+                class="btn-custom me-1 p-2  rounded-pill col-2 bg-primary border border-2 border-primary py-2 me-4 fs-5 text-white text-capitalize">get
+                started now</button>
+              <button
+                class="btn-custom me-1 p-2 rounded-pill col-2 border border-2 border-light px-1 py-2 fs-5 text-white text-capitalize">contact
+                us</button>
+            </div>
+          </div>
+
+        </div>
+        <div class="carousel-item ">
+          <div class="overlay"></div>
+          <img src="images/slider2.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block row">
+            <h2 class="h1 mb-4 fs-1">What You Do Today For Peoples1</h2>
+            <p class="w-50 f-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et iusto, explicabo
+              excepturi porro beatae</p>
+            <div class="row justify-content-center mt-4">
+              <button
+                class="btn-custom me-1 p-2  rounded-pill col-2 bg-primary border border-2 border-primary py-2 me-4 fs-5 text-white text-capitalize">get
+                started now</button>
+              <button
+                class="btn-custom me-1 p-2 rounded-pill col-2 border border-2 border-light px-1 py-2 fs-5 text-white text-capitalize">contact
+                us</button>
+            </div>
+          </div>
+
+        </div>
+        <div class="carousel-item ">
+          <div class="overlay"></div>
+          <img src="images/slider3.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block row">
+            <h2 class="h1 mb-4 fs-1">What You Do Today For Peoples1</h2>
+            <p class="w-50 f-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et iusto, explicabo
+              excepturi porro beatae</p>
+            <div class="row justify-content-center mt-4">
+              <button
+                class="btn-custom me-1 p-2  rounded-pill col-2 bg-primary border border-2 border-primary py-2 me-4 fs-5 text-white text-capitalize">get
+                started now</button>
+              <button
+                class="btn-custom me-1 p-2 rounded-pill col-2 border border-2 border-light px-1 py-2 fs-5 text-white text-capitalize">contact
+                us</button>
+            </div>
+          </div>
+
+        </div>
+        <div class="carousel-item ">
+          <div class="overlay"></div>
+          <img src="images/slider4.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block row">
+            <h2 class="h1 mb-4 fs-1">What You Do Today For Peoples1</h2>
+            <p class="w-50 f-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et iusto, explicabo
+              excepturi porro beatae</p>
+            <div class="row justify-content-center mt-4">
+              <button
+                class="btn-custom  me-1 p-2  rounded-pill col-2 bg-primary border border-2 border-primary py-2 me-4 fs-5 text-white text-capitalize">get
+                started now</button>
+              <button
+                class="btn-custom  me-1 p-2 rounded-pill col-2 border border-2 border-light px-1 py-2 fs-5 text-white text-capitalize">contact
+                us</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="about-us">
+    <div class="container ps-5 py-5 my-5 d-flex flex-column align-items-center justify-content-center">
+      <div class="heading-container text-center">
+        <h2 class="heading text-capitalize h1"><span>About Us</span></h2>
+        <p class="text-capitalize text-secondary mt-3 mb-5">About Us</p>
+      </div>
+
+
+      <div class="row justify-content-center mt-2">
+        <div class="col-8 d-flex justify-content-end ">
+
+
+          <div class="image position-relative ">
+            <ul class="p-0 position-absolute  py-3 px-4  ">
+              <li class="list-unstyled d-flex align-items-center  mb-4 ">
+                <i class="fa-solid fa-bullhorn fa-xl pe-3 fs-2"></i>
+                <div class="border-start-1 border-1 ps-3 d-inline-block" style="border-left: 1px solid #CCC;">
+                  <h3 class="text-capitalize  fs-5">markating</h3>
+                  <p class="m-0 text-secondary">Lorem ipsum dolor sit amet, Aenea jkn consectetuer adipiscn elit.</p>
+                </div>
+              </li>
+              <li class="list-unstyled d-flex align-items-center  mb-4 ">
+                <i class="fa-regular fa-sun fa-xl  pe-3 fs-2"></i>
+                <div class="border-start-1 border-1 ps-3 d-inline-block" style="border-left: 1px solid #CCC;">
+                  <h3 class="text-capitalize  fs-5">great usability
+                  </h3>
+                  <p class="m-0 text-secondary"> Lorem ipsum dolor sit amet, Aenea jkn consectetuer adipiscn elit.</p>
+                </div>
+              </li>
+              <li class="list-unstyled d-flex align-items-center  mb-4 ">
+                <i class="fa-regular fa-sun fa-xl  pe-3 fs-2"></i>
+                <div class="border-start-1 border-1 ps-3 d-inline-block" style="border-left: 1px solid #CCC;">
+                  <h3 class="text-capitalize  fs-5">unique design
+                  </h3>
+                  <p class="m-0 text-secondary"> Lorem ipsum dolor sit amet, Aenea jkn consectetuer adipiscn elit.</p>
+                </div>
+              </li>
+              <li class="list-unstyled d-flex align-items-center   ">
+                <i class="fa-regular fa-sun fa-xl  pe-3 fs-2"></i>
+                <div class="border-start-1 border-1 ps-3 d-inline-block" style="border-left: 1px solid #CCC;">
+                  <h3 class="text-capitalize  fs-5">quick & powerful
+                  </h3>
+                  <p class="m-0 text-secondary"> Lorem ipsum dolor sit amet, Aenea jkn consectetuer adipiscn elit.</p>
+                </div>
+              </li>
+
+            </ul>
+            <img src="images/about-us.jpg" class="img-fluid" alt="">
+          </div>
+        </div>
+        <div class="col-4 py-2 text-secondary  fs-6" style="line-height: 1.7;">
+          <p class="">Dorem ipsum dolor sit amet, consectetur adipiscing elit. Ut blandit nisi a dictum tristique.
+            Nullam urna
+            metus, vestibulum ac sodales eSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+            doloremque laudantium totam remrutrumDorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut
+            perspiciatis.</p>
+          <p class="">Dorem ipsum dolor sit amet. consectetur adipiscing elit. Ut blandit nisi a dictum
+            tristique.
+            Nullam urna
+            metus, vestibulum ac sodales eSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+            doloremque laudantium totam remrutrumDorem ipsum dolor sit amet, consectetur.</p>
+          <button
+            class="btn-custom btn px-4 py-1 btn-lg rounded-pill bg-primary border border-2 border-primary   fs-6 text-white text-capitalize">learn
+            more</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="counters mt-5">
+    <div class="container py-5">
+
+      <div class="row justify-content-center gap-5  py-5 ">
+        <div class="four p-0 col-2 d-flex align-items-center gap-3">
+          <div class="counter-box">
+            <i class="fa  fa-shopping-cart"></i>
+          </div>
+          <div class="box-text">
+            <span class="counter">289</span>
+            <p>Total Projects</p>
+          </div>
+        </div>
+        <div class="four p-0 col-2 d-flex align-items-center gap-3">
+          <div class="counter-box">
+            <i class="fa  fa-shopping-cart"></i>
+          </div>
+          <div class="box-text">
+            <span class="counter">289</span>
+            <p>Won Awards</p>
+          </div>
+        </div>
+        <div class="four p-0 col-2 d-flex align-items-center gap-3">
+          <div class="counter-box">
+            <i class="fa  fa-shopping-cart"></i>
+          </div>
+          <div class="box-text">
+            <span class="counter">289</span>
+            <p>Happy Clients</p>
+          </div>
+        </div>
+        <div class="four p-0 col-2 d-flex align-items-center gap-3">
+          <div class="counter-box">
+            <i class="fa  fa-shopping-cart"></i>
+          </div>
+          <div class="box-text">
+            <span class="counter">289</span>
+            <p>Years Experience</p>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section class="our-services text-center pt-5">
+    <div class="overlay"></div>
+    <div class="container pb-5 mt-5 px-0">
+      <div class="heading-container text-center">
+        <h2 class="heading text-capitalize h1 text-white"><span>Our Services</span></h2>
+        <p class="text-capitalize text-white mt-3 mb-5 w-75 mx-auto">Lorem ipsum dolor sit amet, consectetur adipisicing
+          elit, sed do eiusmod tempor. incididunt ut labore et dolore. Lorem ipsum dolor sit amet, consectetur
+          adipisicing elit, sed do eiusm dipisicing elit, sed do eiusmod tempor.</p>
+      </div>
+      <div class="row justify-content-between mb-5">
+        <div class="col-3 py-5 position-relative">
+          <i class="fa-solid fa-network-wired fa-2xl" style="color: #ffffff;"></i>
+          <h2 class="pt-4">Networking</h2>
+          <div class="overlay-content p-3">
+            <h2 class="fs-3 mb-2">Online Marketing</h2>
+            <p class="fs- mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+              incididunt ut labore et dolore. Lorem ipsum dolor sit amet.</p>
+            <button
+              class="btn-custom btn px-4 py-1 btn-lg rounded-pill bg-primary border border-2 border-primary fs-6 text-white text-capitalize">Learn
+              More</button>
+          </div>
+        </div>
+        <div class="col-3 py-5 position-relative">
+          <i class="fa-solid fa-network-wired fa-2xl" style="color: #ffffff;"></i>
+          <h2 class="pt-4">Networking</h2>
+          <div class="overlay-content p-3">
+            <h2 class="fs-3 mb-2">Online Marketing</h2>
+            <p class="fs- mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+              incididunt ut labore et dolore. Lorem ipsum dolor sit amet.</p>
+            <button
+              class="btn-custom btn px-4 py-1 btn-lg rounded-pill bg-primary border border-2 border-primary fs-6 text-white text-capitalize">Learn
+              More</button>
+          </div>
+        </div>
+        <div class="col-3 py-5 position-relative">
+          <i class="fa-solid fa-network-wired fa-2xl" style="color: #ffffff;"></i>
+          <h2 class="pt-4">Networking</h2>
+          <div class="overlay-content p-3">
+            <h2 class="fs-3 mb-2">Online Marketing</h2>
+            <p class="fs- mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+              incididunt ut labore et dolore. Lorem ipsum dolor sit amet.</p>
+            <button
+              class="btn-custom btn px-4 py-1 btn-lg rounded-pill bg-primary border border-2 border-primary fs-6 text-white text-capitalize">Learn
+              More</button>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-between mb-5">
+        <div class="col-3 py-5 position-relative">
+          <i class="fa-solid fa-network-wired fa-2xl" style="color: #ffffff;"></i>
+          <h2 class="pt-4">Networking</h2>
+          <div class="overlay-content p-3">
+            <h2 class="fs-3 mb-2">Online Marketing</h2>
+            <p class="fs- mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+              incididunt ut labore et dolore. Lorem ipsum dolor sit amet.</p>
+            <button
+              class="btn-custom btn px-4 py-1 btn-lg rounded-pill bg-primary border border-2 border-primary fs-6 text-white text-capitalize">Learn
+              More</button>
+          </div>
+        </div>
+        <div class="col-3 py-5 position-relative">
+          <i class="fa-solid fa-network-wired fa-2xl" style="color: #ffffff;"></i>
+          <h2 class="pt-4">Networking</h2>
+          <div class="overlay-content p-3">
+            <h2 class="fs-3 mb-2">Online Marketing</h2>
+            <p class="fs- mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+              incididunt ut labore et dolore. Lorem ipsum dolor sit amet.</p>
+            <button
+              class="btn-custom btn px-4 py-1 btn-lg rounded-pill bg-primary border border-2 border-primary fs-6 text-white text-capitalize">Learn
+              More</button>
+          </div>
+        </div>
+        <div class="col-3 py-5 position-relative">
+          <i class="fa-solid fa-network-wired fa-2xl" style="color: #ffffff;"></i>
+          <h2 class="pt-4">Networking</h2>
+          <div class="overlay-content p-3">
+            <h2 class="fs-3 mb-2">Online Marketing</h2>
+            <p class="fs- mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+              incididunt ut labore et dolore. Lorem ipsum dolor sit amet.</p>
+            <button
+              class="btn-custom btn px-4 py-1 btn-lg rounded-pill bg-primary border border-2 border-primary fs-6 text-white text-capitalize">Learn
+              More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="our-work about-us pt-5">
+    <div class="container pt-5">
+      <div class="heading-container text-center text-dark">
+        <h2 class="heading text-capitalize h1"><span>Our Work</span></h2>
+        <p class="text-capitalize mt-3 mb-5 w-75 mx-auto">Lorem ipsum dolor sit amet, consectetur adipisicing
+          elit, sed do eiusmod tempor. incididunt ut labore et dolore. Lorem ipsum dolor sit amet, consectetur
+          adipisicing elit, sed do eiusm dipisicing elit, sed do eiusmod tempor.</p>
+      </div>
+      <nav class="sec-nav d-flex justify-content-center gap-4">
+        <a href="#" class="filter-btn active-a" data-filter="all">All&nbsp;&nbsp; /&nbsp;</a>
+        <a href="#" class="filter-btn" data-filter="creative">Creative design&nbsp;&nbsp; /&nbsp;</a>
+        <a href="#" class="filter-btn" data-filter="development">development&nbsp;&nbsp; / &nbsp;</a>
+        <a href="#" class="filter-btn" data-filter="graphic">graphic design&nbsp;&nbsp; / &nbsp;</a>
+      </nav>
+      <div class="row d-flex justify-content-center pb-5 pt-5">
+        <!-- New Card 1 -->
+        <div class="col-4 mt-3 image-container" data-category="creative">
+          <img src="images/Our-works/office-1209640_1920-1-360x380.jpg" class="img-fluid" alt="">
+          <div class="inner-box row">
+            <div class="col-10">
+              <p class="mb-1">Developement, Graphic Design </p>
+              <p><span>ProjectTitle 01</span></p>
+            </div>
+            <div class="col-2">
+              <i class="fa-solid fa-plus fs-5" style="cursor: pointer;"></i>
+            </div>
+          </div>
+        </div>
+        <!-- New Card 2 -->
+        <div class="col-4 mt-3 image-container" data-category="development">
+          <img src="images/Our-works/port2-370x390.jpg" class="img-fluid" alt="">
+          <div class="inner-box row">
+            <div class="col-10">
+              <p class="mb-1">Description 2</p>
+              <p><span>ProjectTitle 02</span></p>
+            </div>
+            <div class="col-2">
+              <i class="fa-solid fa-plus fs-5" style="cursor: pointer;"></i>
+            </div>
+          </div>
+        </div>
+        <!-- New Card 3 -->
+        <div class="col-4 mt-3 image-container" data-category="graphic">
+          <img src="images/Our-works/port2-5-360x380.jpg" class="img-fluid" alt="">
+          <div class="inner-box row">
+            <div class="col-10">
+              <p class="mb-1">Description 3</p>
+              <p><span>ProjectTitle 03</span></p>
+            </div>
+            <div class="col-2">
+              <i class="fa-solid fa-plus fs-5" style="cursor: pointer;"></i>
+            </div>
+          </div>
+        </div>
+        <!-- New Card 4 -->
+        <div class="col-4 mt-3 image-container" data-category="creative">
+          <img src="images/Our-works/suit-869380_1920-360x380.jpg" class="img-fluid" alt="">
+          <div class="inner-box row">
+            <div class="col-10">
+              <p class="mb-1">Description 4</p>
+              <p><span>ProjectTitle 04</span></p>
+            </div>
+            <div class="col-2">
+              <i class="fa-solid fa-plus fs-5" style="cursor: pointer;"></i>
+            </div>
+          </div>
+        </div>
+        <!-- New Card 5 -->
+        <div class="col-4 mt-3 image-container" data-category="graphic">
+          <img src="images/Our-works/suit-869380_1920-360x380.jpg" class="img-fluid" alt="">
+          <div class="inner-box row">
+            <div class="col-10">
+              <p class="mb-1">Description 5</p>
+              <p><span>ProjectTitle 05</span></p>
+            </div>
+            <div class="col-2">
+              <i class="fa-solid fa-plus fs-5" style="cursor: pointer;"></i>
+            </div>
+          </div>
+        </div>
+        <!-- New Card 6 -->
+        <div class="col-4 mt-3 image-container" data-category="development">
+          <img src="images/Our-works/computer-472016_1920-360x380.jpg" class="img-fluid" alt="">
+          <div class="inner-box row">
+            <div class="col-10">
+              <p class="mb-1">Description 6</p>
+              <p><span>ProjectTitle 06</span></p>
+            </div>
+            <div class="col-2">
+              <i class="fa-solid fa-plus fs-5" style="cursor: pointer;"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="Our-Creative-Team about-us mt-5 pt-1 text-center">
+    <div class="container pb-5 mt-5 px-0">
+      <div class="heading-container text-center text-dark">
+        <h2 class="heading text-capitalize h1"><span>our pricing</span></h2>
+        <p class="text-capitalize mt-3 mb-5 w-75 mx-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+          do eiusmod tempor. Incididunt ut labore et dolore. Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed do eiusmod tempor.</p>
+      </div>
+      <div class="button-group mb-5">
+        <a href="#" class="btn active" id="monthly-btn">Per / Month</a>
+        <a href="#" class="btn" id="yearly-btn">Per / Year</a>
+      </div>
+      <div id="pricing-content">
+        <div class="row justify-content-center">
+          <div class="col-md-4">
+            <div class="pricing-card">
+              <h2 class="title">Business</h2>
+              <p class="price">From <span>$899</span></p>
+              <ul class="features">
+                <li>
+                  <strong>
+                    <i class="fa fa-check-circle"></i>
+                    05 PSD Pack</strong>
+                  <p>Lorem ipsum dolor sit amet, consectetur Aenean commodo ligula</p>
+                </li>
+                <li>
+                  <strong>
+                    <i class="fa fa-check-circle"></i>
+                    05 Wordpress Pack</strong>
+                  <p>Lorem ipsum dolor sit amet, consectetur Aenean commodo ligula</p>
+                </li>
+                <li>
+                  <strong>
+                    <i class="fa fa-check-circle"></i>
+                    1000 Support Ticket</strong>
+                  <p>Lorem ipsum dolor sit amet, consectetur Aenean commodo ligula</p>
+                </li>
+              </ul>
+              <button
+                class="btn-custom btn px-4 py-3   btn-lg rounded-pill bg-primary border border-2 border-primary   fs-6 text-white text-uppercase">Get
+                Started Now</button>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="pricing-card selected">
+              <h2 class="title">Business</h2>
+              <p class="price">From <span>$899</span></p>
+              <ul class="features">
+                <li>
+                  <strong>
+                    <i class="fa fa-check-circle"></i>
+                    05 PSD Pack</strong>
+                  <p>Lorem ipsum dolor sit amet, consectetur Aenean commodo ligula</p>
+                </li>
+                <li>
+                  <strong>
+                    <i class="fa fa-check-circle"></i>
+                    05 Wordpress Pack</strong>
+                  <p>Lorem ipsum dolor sit amet, consectetur Aenean commodo ligula</p>
+                </li>
+                <li>
+                  <strong>
+                    <i class="fa fa-check-circle"></i>
+                    1000 Support Ticket</strong>
+                  <p>Lorem ipsum dolor sit amet, consectetur Aenean commodo ligula</p>
+                </li>
+              </ul>
+              <button
+                class="button-white btn-custom btn px-4 py-3 bg-transparent  btn-lg rounded-pill bg-primary border border-2 border-primary   fs-6 text-white text-uppercase">Get
+                Started Now</button>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="pricing-card">
+              <h2 class="title">Business</h2>
+              <p class="price">From <span>$899</span></p>
+              <ul class="features">
+                <li>
+                  <strong>
+                    <i class="fa fa-check-circle"></i>
+                    05 PSD Pack</strong>
+                  <p>Lorem ipsum dolor sit amet, consectetur Aenean commodo ligula</p>
+                </li>
+                <li>
+                  <strong>
+                    <i class="fa fa-check-circle"></i>
+                    05 Wordpress Pack</strong>
+                  <p>Lorem ipsum dolor sit amet, consectetur Aenean commodo ligula</p>
+                </li>
+                <li>
+                  <strong>
+                    <i class="fa fa-check-circle"></i>
+                    1000 Support Ticket</strong>
+                  <p>Lorem ipsum dolor sit amet, consectetur Aenean commodo ligula</p>
+                </li>
+              </ul>
+              <button
+                class="btn-custom btn px-4 py-3   btn-lg rounded-pill bg-primary border border-2 border-primary   fs-6 text-white text-uppercase">Get
+                Started Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="bg-dark pb-5 mb-5">
+    <div class="container">
+      <div class="row justify-content-center pt-5">
+        <div class="col-6 d-flex gap-2 align-items-center">
+          <i class="fa-regular fa-envelope fs-1 pb-2" style="color: #ffffff;"></i>
+          <p class="text-white fs-1 m-0">Subscribe now for news</p>
+        </div>
+
+        <form class="d-flex align-items-center justify-content-end col-6">
+          <input class="form-control me-2 w-50" placeholder="input your mail" aria-label="Search">
+          <button
+            class="btn-custom btn px-4 py-2 rounded-pill bg-primary border border-2 border-primary fs-6 text-white text-capitalize d-flex justify-content-center align-items-center">
+            subscribe
+          </button>
+
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="Testimonial about-us mt-5 pt-1 text-center">
+    <div id="testimonialCarousel" class="carousel slide container pb-5 mt-5 px-0" data-bs-ride="carousel">
+      <div class="heading-container text-center text-dark">
+        <h2 class="heading text-capitalize h1"><span>Testimonial</span></h2>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row justify-content-center gap-3">
+            <div class="col-5 d-flex align-items-center" style="border: 1px solid #d7d7d7;">
+              <div class="box-img">
+                <img src="images/testi-avtar-1.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="box-text text-left w-75 p-3">
+                <h4 class="text-left fs-6 mb-1" style="text-align: left;">Jon Doe</h4>
+                <h5 class="text-left fs-6 mb-1" style="text-align: left; color: #007bff;">Marketing Manager</h5>
+                <p class="text-left fs-6" style="text-align: left; font-size: 0.9rem !important;">
+                  Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, ligula. Cum eget
+                  dolor Aenean rhoncus ut, fringilla vel, aliquet nec, imperdiet a, venenatis vitae, justo. Nullam
+                  dictum
+                  felis eu pede mollis pretium.
+                </p>
+              </div>
+            </div>
+            <div class="col-5 d-flex align-items-center" style="border: 1px solid #d7d7d7;">
+              <div class="box-img">
+                <img src="images/testi-avtar-4.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="box-text text-left w-75 p-3">
+                <h4 class="text-left fs-6 mb-1" style="text-align: left;">Jon Doe</h4>
+                <h5 class="text-left fs-6 mb-1" style="text-align: left; color: #007bff;">Marketing Manager</h5>
+                <p class="text-left fs-6" style="text-align: left; font-size: 0.9rem !important;">
+                  Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, ligula. Cum eget
+                  dolor Aenean rhoncus ut, fringilla vel, aliquet nec, imperdiet a, venenatis vitae, justo. Nullam
+                  dictum
+                  felis eu pede mollis pretium.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row justify-content-center gap-3">
+            <div class="col-5 d-flex align-items-center" style="border: 1px solid #d7d7d7;">
+              <div class="box-img">
+                <img src="images/testi-avtar-1.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="box-text text-left w-75 p-3">
+                <h4 class="text-left fs-6 mb-1" style="text-align: left;">Jon Doe</h4>
+                <h5 class="text-left fs-6 mb-1" style="text-align: left; color: #007bff;">Marketing Manager</h5>
+                <p class="text-left fs-6" style="text-align: left; font-size: 0.9rem !important;">
+                  Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, ligula. Cum eget
+                  dolor Aenean rhoncus ut, fringilla vel, aliquet nec, imperdiet a, venenatis vitae, justo. Nullam
+                  dictum
+                  felis eu pede mollis pretium.
+                </p>
+              </div>
+            </div>
+            <div class="col-5 d-flex align-items-center" style="border: 1px solid #d7d7d7;">
+              <div class="box-img">
+                <img src="images/testi-avtar-4.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="box-text text-left w-75 p-3">
+                <h4 class="text-left fs-6 mb-1" style="text-align: left;">Jon Doe</h4>
+                <h5 class="text-left fs-6 mb-1" style="text-align: left; color: #007bff;">Marketing Manager</h5>
+                <p class="text-left fs-6" style="text-align: left; font-size: 0.9rem !important;">
+                  Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, ligula. Cum eget
+                  dolor Aenean rhoncus ut, fringilla vel, aliquet nec, imperdiet a, venenatis vitae, justo. Nullam
+                  dictum
+                  felis eu pede mollis pretium.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Repeat the carousel-item div structure for additional slides -->
+      </div>
+      <div class="row justify-content-center pt-5 gap-2">
+        <a class="btn icon-btn rounded-left px-2" href="#testimonialCarousel" role="button" data-bs-slide="prev">
+          <i class="fa-solid fa-left-long icon-color"></i>
+        </a>
+        <a class="btn icon-btn rounded-right px-2" href="#testimonialCarousel" role="button" data-bs-slide="next">
+          <i class="fa-solid fa-left-long fa-rotate-180 icon-color"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section class="latest about-us my-5 pb-5 pt-1 text-center">
+    <div class="container pb-5 mt-5 px-0">
+      <div class="heading-container text-center text-dark">
+        <h2 class="heading text-capitalize h1"><span>Latest Blog</span></h2>
+        <p class="text-capitalize mt-3 mb-5 w-75 mx-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+          do eiusmod tempor. Incididunt ut labore et dolore. Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed do eiusmod tempor.</p>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-3">
+          <div class="div-img">
+            <img src="images/latest/bg1-360x260.jpg" class="img-fluid">
+          </div>
+          <div class="box-text">
+            <div class="social-icons py-3">
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-linkedin-in"></i>
+              <i class="fab fa-google-plus-g"></i>
+            </div>
+            <div class="other-text py-3 px-3">
+              <h4 class="fs-5">Four ways to cheer and plan yourself up on Blue</h4>
+              <p>
+                <span class="author"><i class="fa-solid fa-user-large fa-2xs"></i> by dtm_demo</span>
+                <span class="date"><i class="fa-regular fa-calendar-days fa-xs"></i> 19 Dec 2018</span>
+              </p>
+              <p>Lorem ipsum dolor sit amet, rcquisc adipiscing elit. Aenean socada commodo ligauala egets dssdolor....
+              </p>
+              <a href="" class="btn text-secondary">Read More <i
+                  class="fa-solid fa-left-long fa-rotate-180 icon-color text-secondary"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 ">
+          <div class="div-img">
+            <img src="images/latest/bg3-360x260.jpg" class="img-fluid">
+          </div>
+          <div class="box-text">
+            <div class="social-icons py-3">
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-linkedin-in"></i>
+              <i class="fab fa-google-plus-g"></i>
+            </div>
+            <div class="other-text py-3 px-3">
+              <h4 class="fs-5">Four ways to cheer and plan yourself up on Blue</h4>
+              <p>
+                <span class="author"><i class="fa-solid fa-user-large fa-2xs"></i> by dtm_demo</span>
+                <span class="date"><i class="fa-regular fa-calendar-days fa-xs"></i> 19 Dec 2018</span>
+              </p>
+              <p>Lorem ipsum dolor sit amet, rcquisc adipiscing elit. Aenean socada commodo ligauala egets dssdolor....
+              </p>
+              <a href="" class="btn text-secondary">Read More <i
+                  class="fa-solid fa-left-long fa-rotate-180 icon-color text-secondary"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-3">
+          <div class="div-img">
+            <img src="images/latest/gallery2-1-360x260.png" class="img-fluid">
+          </div>
+          <div class="box-text">
+            <div class="social-icons py-3">
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-linkedin-in"></i>
+              <i class="fab fa-google-plus-g"></i>
+            </div>
+            <div class="other-text py-3 px-3">
+              <h4 class="fs-5">Four ways to cheer and plan yourself up on Blue</h4>
+              <p>
+                <span class="author"><i class="fa-solid fa-user-large fa-2xs"></i> by dtm_demo</span>
+                <span class="date"><i class="fa-regular fa-calendar-days fa-xs"></i> 19 Dec 2018</span>
+              </p>
+              <p>Lorem ipsum dolor sit amet, rcquisc adipiscing elit. Aenean socada commodo ligauala egets dssdolor....
+              </p>
+              <a href="" class="btn text-secondary">Read More <i
+                  class="fa-solid fa-left-long fa-rotate-180 icon-color text-secondary"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="container client-section mt-5 about-us pt-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-3 col-md-12 text-center my-3 client-man mb-0 ">
+        <img src="images/our-clients/partner-slide-man.png" class="man-img" alt="Man Image">
+      </div>
+      <div class="col-lg-9 col-md-12 px-4">
+        <div class="heading-container">
+          <h2 class="heading text-capitalize h1"><span>meet our clients</span></h2>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 col-sm-6 my-3 text-center pt-1">
+            <div class="border border-2 border-black p-3">
+              <img src="images/our-clients/partner-g3.png" alt="Client 1" class="client-logos">
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 my-3 text-center pt-1">
+            <div class="border border-2 border-black p-3">
+              <img src="images/our-clients/partner-g3.png" alt="Client 2" class="client-logos">
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 my-3 text-center pt-1">
+            <div class="border border-2 border-black p-3">
+              <img src="images/our-clients/partner-g3.png" alt="Client 3" class="client-logos">
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 my-3 text-center pt-1">
+            <div class="border border-2 border-black p-3">
+              <img src="images/our-clients/partner-g3.png" alt="Client 4" class="client-logos">
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 my-3 text-center pt-1">
+            <div class="border border-2 border-black p-3">
+              <img src="images/our-clients/partner-g3.png" alt="Client 5" class="client-logos">
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 my-3 text-center pt-1">
+            <div class="border border-2 border-black p-3">
+              <img src="images/our-clients/partner-g3.png" alt="Client 6" class="client-logos">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cta-section text-center py-5 bg-primary text-white">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-9">
+          <p class="fs-5 m-0" style="text-align: left;">If You Like This Grate Work ?? For You Site...</p>
+        </div>
+        <div class="col-md-3 " style="text-align: right;">
+          <a href="#" class="btn btn-light text-primary  p-0 fs-6 rounded-pill px-3 py-1 bg-light">Purchase
+            Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fixed Scroll to Top Button -->
+  <button id="scrollToTopBtn" class="scroll-to-top-btn">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <div class="footer">
+    <div class="container pb-5">
+      <div class="row justify-content-center pb-5">
+        <div class="col-md-4">
+          <h5>Contact Info</h5>
+          <p><i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp; 123 Street Market, Life Plaza, New York</p>
+          <p><i class="fas fa-phone-alt"></i>&nbsp; 987654321</p>
+          <p><i class="fas fa-envelope"></i>&nbsp; team@gmail.com</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Posts</h5>
+          <div class="post-item">
+            <img src="images/footer.jpg" alt="Post Image">
+            <div class="post-content ">
+              <a href="#" class="text-white mb-2">Four ways to cheer and plan your self up on Blue</a>
+              <span><i class="far fa-calendar-alt"></i> December 19, 2018</span>
+            </div>
+          </div>
+          <div class="post-item text-white">
+            <img src="images/footer.jpg" alt="Post Image">
+            <div class="post-content">
+              <a href="#" class="text-white mb-2">Four ways to cheer and plan your self up on Blue</a>
+              <span><i class="far fa-calendar-alt"></i> December 19, 2018</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h5>Popular</h5>
+          <div class="popular-tags">
+            <a href="#">Accountancy</a>
+            <a href="#">Affiliate</a>
+            <a href="#">Branding</a>
+            <a href="#">Construction</a>
+            <a href="#">Design</a>
+            <a href="#">Drupal</a>
+            <a href="#">Education</a>
+            <a href="#">Graphics</a>
+            <a href="#">Joomla</a>
+            <a href="#">Marketing</a>
+            <a href="#">Money</a>
+            <a href="#">Tally</a>
+            <a href="#">Transform</a>
+            <a href="#">Website</a>
+            <a href="#">Wordpress</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom mt-5">
+      © 2019 Developed By Raed Mohamed
+    </div>
+  </div>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+  <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 

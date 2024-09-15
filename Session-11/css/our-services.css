@@ -1,0 +1,143 @@
+.our-services .heading-container {
+  position: relative;
+  display: inline-block;
+}
+
+.our-services .heading {
+  display: inline-block;
+  position: relative;
+  padding: 0 20px;
+}
+
+.our-services .heading::before,
+.our-services .heading::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 75px;
+  height: 1px;
+  background-color: blue;
+  border-radius: 2px;
+  transform: translateY(-50%);
+}
+
+.our-services .heading::before {
+  left: -75px;
+}
+
+.our-services .heading::after {
+  right: -75px;
+}
+
+.our-services .heading span {
+  position: relative;
+  display: inline-block;
+  padding: 0 20px; /* Add padding to create space for the pseudo-elements */
+}
+
+.our-services .heading span::before,
+.our-services .heading span::after {
+  content: '';
+  position: absolute;
+  top: 40%;
+  width: 45px;
+  height: 1px;
+  background-color: blue;
+  border-radius: 2px;
+  transform: translateY(-50%);
+}
+
+.our-services .heading span::before {
+  left: -65px;
+}
+
+.our-services .heading span::after {
+  right: -65px;
+}
+
+.our-services ul {
+  max-width: 380px;
+  background-color: #FFF;
+  z-index: 3;
+  transform: translateX(-95%) translateY(5%);
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+.our-services ul li:hover i,
+.our-services ul li:hover h3 {
+  color: #007bff; /* Change color on hover */
+}
+
+
+.our-services {
+  position: relative;
+  background: url(../images/service-bg.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.our-services .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9); /* Semi-transparent dark overlay */
+  z-index: 1; /* Make sure overlay is on top of the background */
+}
+
+.our-services .container {
+  position: relative;
+  z-index: 2; /* Ensure content is above the overlay */
+}
+
+.our-services h2 {
+  color: #FFF;
+}
+
+.our-services .col-3 {
+  border: 1px solid #6a6968;
+  border-radius: 5px;
+  width: 30% !important;
+}
+
+.our-services .col-3  {
+  position: relative;
+  overflow: hidden; /* Hide any overflow of the overlay content */
+}
+
+.our-services .overlay-content {
+  display: none !important;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background: rgba(0, 0, 0, 0.8);
+  /* color: #fff; */
+  /* overflow: hidden; */
+  transition: height 0.3s ease;
+ 
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFF;
+}
+
+.col-3:hover .overlay-content {
+  height: 100%; 
+  display: block !important;/* Expand overlay content to full height on hover */
+}
+
+.our-services .overlay-content h2, .overlay-content p, .overlay-content a {
+  color: #000;
+  text-align: center;
+}
+
+.our-services.overlay-content a {
+  display: inline-block;
+  margin-top: 10px;
+  /* color: #ffffff; */
+  text-decoration: none;
+}

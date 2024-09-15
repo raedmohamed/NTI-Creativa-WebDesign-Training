@@ -1,0 +1,12 @@
+
+.man-img {
+  filter: drop-shadow(-11px 0 7px rgba(140, 140, 140, 0.4));
+}
+
+.client-section h2::before ,.client-section span::before{
+  display: none;
+}
+.client-section h2 ,.client-section span{
+  display: none;
+  padding-left: 0 !important;
+}

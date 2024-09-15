@@ -1,0 +1,80 @@
+.Our-Creative-Team .col-3 {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+
+.team-info {
+ 
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  height: 22%;
+  background: #fff;
+  padding-top: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: -30px;
+  z-index: 0;
+  border-bottom: 3px solid #1a1a1a;
+  transition: height 0.3s ease, border-bottom 0.3s ease;
+}
+
+.team-info h3 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.team-info .position {
+  display: block;
+  font-size: 0.8rem;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.team-info p {
+  font-size: 0.875rem;
+  color: #777;
+  margin-bottom: 20px;
+  display: none;
+  transition: opacity 0.3s ease;
+}
+.social-links {
+  border-radius: 5px 5px 0 0;
+  background-color: #007bff;
+  width: 90%;
+  margin: auto;
+}
+.social-links a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  margin: 0 5px;
+  border-radius: 20px;
+  background: #007bff;
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  background: #0056b3;
+}
+
+/* Hover effect */
+.Our-Creative-Team .col-3:hover .team-info {
+  height: 60%;
+  border-bottom: none;
+}
+
+.Our-Creative-Team .col-3:hover .team-info p {
+  display: block;
+  opacity: 1;
+}

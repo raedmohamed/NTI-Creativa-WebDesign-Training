@@ -1,0 +1,11 @@
+.icon-btn {
+  border: 1px solid #d7d7d7;
+}
+.icon-color {
+  color: #007bff;
+}
+.carousel-item {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}

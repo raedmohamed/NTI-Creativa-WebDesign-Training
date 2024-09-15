@@ -1,0 +1,115 @@
+.latest .box-text {
+  display: flex;
+  justify-content: center;
+}
+
+.latest {
+  background-color: #f9f9f9;
+}
+
+.latest .col-3 img {
+  transition: transform 0.3s linear;
+  transform-origin: center center; /* Ensure the transform happens around the center */
+  position: relative;
+}
+
+.social-icons {
+  width: 12% !important;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #000;
+}
+
+.social-icons i {
+  color: #FFF;
+  transition: background-color 0.3s ease;
+}
+
+.latest .col-3:hover .social-icons,
+.latest .col-3:hover span.author::after {
+  background-color: blue;
+  width: 220%;
+}
+
+.latest .col-3:hover img {
+  transform: scale(1.1) rotate(-2deg);
+}
+
+.other-text {
+  flex: 1;
+  text-align: left !important;
+  color: #666666;
+}
+
+.other-text h4 {
+  font-size: 1rem !important;
+  margin-bottom: 10px;
+}
+
+.other-text h4:hover {
+  color: blue;
+}
+
+.other-text p {
+  margin-bottom: 10px !important;
+  position: relative;
+}
+
+.other-text p span:first-child {
+  border-right: 1px solid #666;
+  height: 1em; /* Set the height of the border */
+  display: inline-block;
+  line-height: 1em; /* Ensure the border height matches the text */
+  padding-right: 10px; /* Add padding to make space for the border */
+}
+
+.other-text p span {
+  margin-right: 4px;
+}
+
+.other-text p span.author {
+  display: inline-block;
+  position: relative;
+}
+
+.other-text p span.author::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -10px; /* Adjust this value to move the line further down if needed */
+  width: 50%;
+  height: 2px;
+  background-color: blue;
+  transition: width 0.3s ease;
+}
+
+.other-text p span.author:hover::after {
+  width: 100%;
+}
+
+.other-text a {
+  padding: 0;
+  font-size: 0.8rem;
+}
+
+.other-text i {
+  padding-bottom: 2px;
+}
+
+.div-img {
+  overflow: hidden; /* Ensure the image doesn't overflow its container */
+  position: relative; /* Ensure the container is positioned correctly */
+  width: 100%; /* Make sure the container has the correct width */
+  height: auto; /* Adjust the height accordingly */
+}
+
+.div-img img {
+  width: 100% !important;
+  transition: transform 0.3s linear;
+  transform-origin: center center;
+  position: absolute; /* Keep the image positioned absolutely within its container */
+  top: 0;
+  left: 0;
+}

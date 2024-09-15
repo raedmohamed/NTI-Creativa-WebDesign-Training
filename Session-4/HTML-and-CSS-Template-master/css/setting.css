@@ -1,0 +1,82 @@
+.fs-14 {
+  font-size: 14px; /* 0.875rem * 16px = 14px */
+}
+
+.fs-20 {
+  font-size: 20px; /* 1.25rem * 16px = 20px */
+}
+.fs-24 {
+  font-size: 24px; /* 1.25rem * 16px = 20px */
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-gray {
+  color: #8d8d8d;
+}
+
+.text-wh-gray {
+  color: #cac5c5;
+}
+
+.text-decoration-none {
+  text-decoration: none;
+}
+
+.text-trans-upper {
+  text-transform: uppercase;
+}
+
+.text-trans-captalize {
+  text-transform: capitalize;
+}
+
+.letter-spacing {
+  letter-spacing: 1.5px;
+}
+
+.cursor-p {
+  cursor: pointer;
+}
+
+.active {
+  color: #fff;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.display-ib {
+  display: inline-block;
+}
+
+.w-40 {
+  width: 40%;
+}
+
+.pd-x {
+  padding: 0 12px; /* 0.75rem * 16px = 12px */
+}
+
+.pd-bottom {
+  padding: 12px; /* 0.75rem * 16px = 12px */
+}
+
+.pd-top {
+  padding-top: 30px; /* 1.875rem * 16px = 30px */
+}
+
+.mg-r {
+  margin-right: 20px; /* 1.25rem * 16px = 20px */
+}
+
+.justify-space {
+  justify-content: space-between;
+}
+
+.main-border-bottom {
+  border-bottom: 2px solid #cac5c5;
+}

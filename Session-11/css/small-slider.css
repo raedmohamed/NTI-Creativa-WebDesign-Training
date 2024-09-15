@@ -1,0 +1,29 @@
+.icon-btn {
+  background-color: #007bff; /* Bootstrap primary color */
+  padding: 0;
+  width: auto; /* Adjust width to fit the icon */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-btn.rounded-left {
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.icon-btn.rounded-right {
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.icon-color {
+  color: #ffffff;
+}
+
+.icon-btn .fa-left-long {
+  padding: 2px; /* Add padding to make the button size consistent */
+}

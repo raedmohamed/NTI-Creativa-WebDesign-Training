@@ -1,0 +1,56 @@
+/* Link styling */
+.sec-nav a {
+  color: black;
+  text-transform: capitalize;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.sec-nav a:hover {
+  color: #0c65ed;
+}
+
+.active-a {
+  color: #0c65ed !important;
+}
+
+/* Image styling */
+.img-fluid {
+  display: block;
+  height: auto;
+  position: relative;
+  max-width: 100%;
+  width: 94%;
+}
+
+/* Inner-box styling */
+.inner-box {
+  position: absolute;
+  bottom: 4%;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
+  width: 80%;
+  height: 20%;
+  background-color: rgba(12, 101, 237, 0.8);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+  transform-origin: center;
+  border-radius: 10px;
+}
+
+.image-container:hover .inner-box {
+  transform: translateX(-50%) scaleX(1);
+}
+
+.image-container {
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
+}
+
+

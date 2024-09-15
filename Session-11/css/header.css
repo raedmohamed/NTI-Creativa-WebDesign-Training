@@ -1,3 +1,13 @@
+
+.menu-header {
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 999;
+  background-color: #FFF;
+  width: 100%;
+}
+
+
 .head-top a,
 p {
   font-size: 1rem;
@@ -66,7 +76,7 @@ header {
   background-color: #FFF;
   min-width: 190px;
   width: auto;
-  top: 100%; /* Position directly below the parent */
+  top: 86%; /* Position directly below the parent */
   left: 0;
   padding: 0;
   position: absolute;
